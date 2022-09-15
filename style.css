@@ -1,0 +1,295 @@
+.intro{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:50px;
+}
+.intro img{
+  max-width: 100%;
+  margin:50px 0px;
+  margin-left: 200px;
+}
+#home h2{
+font-weight: lighter;
+}
+.image{
+  flex-basis: 40%
+}
+.text{
+font-size: 20px;
+padding-left: 20px;
+}
+
+#about{
+  background-color: #FFFFFF;
+  text-align:center;
+}
+.about-para{
+  text-align:justify;
+}
+#skills{
+  margin-top:100px;
+  background-color: #FFFFFF;
+}
+
+#portfolio{
+    margin-left: 20px;
+    margin-right: 20px;
+  background-color: #FFFFFF;
+}
+#contact{
+  background-color: #FFFFFF;
+    height:170px;
+    text-align:center;
+  padding-top:40px;
+}
+
+.card {
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+.card p{
+  margin: 20px;
+
+  font-size: 18px;
+}
+.card img{
+  width: 100%;
+}
+.card a{
+  margin-left:5px;
+}
+
+.row{
+  margin-bottom:50px;
+}
+a:hover {
+  opacity: 0.7;
+  color:black;
+}
+#contact button{
+  margin-top:30px;
+  margin-bottom:10px;
+  border-color:#aeaeae;
+   
+  width:200px;
+   background-color: #0e0e0e;
+  color: white;
+}
+#contact button:hover {
+  color:black;
+  background-color:#aeaeae;
+}
+#contact h5{
+  margin:10px;
+}
+
+#about button{
+  border-color:#FFFFFF;
+   background-color: #0e0e0e;
+  color: white;
+    ;
+  width:200px;
+}
+#about button:hover {
+ color:black;
+  background-color:#aeaeae
+}
+
+.navbar {
+  background-color: #aeaeae;
+  top: 0;
+    width: 100%;
+    overflow: hidden;
+
+
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+.navbar .right a {
+ font-size: medium;
+}
+.navbar a:hover {
+
+  color: black;
+}
+
+.skill-item{
+  text-align:center;
+}
+
+
+.card-skills {
+
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 60px;
+}
+
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.skills-container {
+  width: 100%;
+  background-color: #ddd;
+
+}
+
+.skills-bar {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  margin-left:0px;
+}
+
+.hyptes {width: 90%; background-color: #000;}
+.predana {width: 90%; background-color: #000;}
+.desana {width: 90%; background-color: #000;}
+.eda {width: 90%; background-color: #000;}
+
+.ds {width: 70%; background-color: #000;}
+.pan {width: 80%; background-color: #000;}
+.num {width: 80%; background-color: #000;}
+.nlt {width: 70%; background-color: #000;}
+
+.tab {width: 60%; background-color: #000;}
+.ggp {width: 80%; background-color: #000;}
+.mpl {width: 80%; background-color: #000;}
+
+.sci {width: 80%; background-color: #000;}
+.ten {width: 40%; background-color: #000;}
+.ker {width: 40%; background-color: #000;}
+
+.wri {width: 90%; background-color: #000;}
+.pre {width: 90%; background-color: #000;}
+.doc {width: 90%; background-color: #000;}
+.bra {width: 90%; background-color: #000;}
+
+.html-css-js {width: 90%; background-color: #000;}
+.aws {width: 20%; background-color: #000;}
+.flask {width: 20%; background-color: #000;}
+.ado {width: 70%; background-color: #000;}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+#text{
+  position: absolute;
+  text-align:center;
+  width:100%;
+height:100%;
+  font-size: 30px;
+  color: white;
+ 
+    
+
+}
+.overlay-content{
+  top:20px;
+  bottom:20px;
+}
+
+.icons{
+  margin-left:8px;
+}
+
+#about p{
+  margin-left:40px;
+  margin-right:40px;
+  margin-bottom:0px;
+}
+#portfolio .card{
+  margin-bottom:20px;
+}
+
+#about h1{
+  margin-top:30px;
+  margin-bottom:30px;
+}
+#skills h1{
+   margin-top: 10px;
+  margin-bottom:30px;
+}
+#portfolio h1{
+    margin-top:20px;
+  margin-bottom:40px;
+}
+#contact .btn{
+  margin-top:0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .intro img{
+   max-width: 400px;
+    margin: 30px;
+  }
+  #text{
+    font-size: 10px;
+
+  }
+}
