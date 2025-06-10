@@ -1,438 +1,525 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Maureen Rachel Personal Website</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
-
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- partial:index.partial.html -->
-</div><!--Deal with the navbar later-->
-<!--Home Page-->
-<!--NavBAr + Intro-->
-<div id="home">
-  <div class="navbar">
-  <a href="#home" style = "font-weight: bolder;" onclick=on()>maureen rachel.</a>
-  <div class="right">
-  <a href="#home">home</a>
-  <a href="#about">about</a>
-  <a href="#skills">skills</a>
-  <a href="#portfolio">portfolio</a>
-  <a href="#contact">contact</a>
-</div>
-</div>
-<!--navbar ends-->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">maureen rachel.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#datadiaries">livecoding</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<!--Introduction begins-->
- <!--Three lines + image-->
-  <div class="intro row" >
-   <div class="image col-lg-6">
-    <img src="images\Picsart_22-09-14_20-04-06-092.png" alt="Picture of Me" onclick=on()>
-    </div>
-    <div style="text-align: center;" class="text col-lg-6">
-      <h2> Hi, This is</h2>
-      <h1 class="title"> Maureen Rachel </h1>
-      <h2 class="subtitle"> Software Engineer - Data</h2>
+<!-- Home Section -->
+<section id="home" class="d-flex align-items-center min-vh-100">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 order-lg-1 order-2">
+        <div class="home-text">
+          <h2>Hi, This is</h2>
+          <h1 class="title">Maureen Rachel</h1>
+          <h2 class="subtitle">Data Science and Engineering Professional</h2>
+          <a href="#about" class="btn btn-custom mt-4">Learn More</a>
+        </div>
+      </div>
+      <div class="col-lg-6 order-lg-2 order-1 text-center">
+        <div class="home-img">
+          <img src="images/Picsart_22-09-14_20-04-06-092.png" alt="Picture of Me" class="img-fluid" onclick="on()">
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<!--introduction ends-->
-<!--Home Page end-->
-<!------------------------------------------->
+</section>
 
-<!--About Me Page begins -->
-<div id="about">
-  <h1>About.</h1>
-  <div class="row">
-    <div class="col-lg-6">
-      <h3> Experience? </h3>
-  <p class="about-para">My background includes an undergraduate degree in Computer Science Engineering. Additionally I have a year work experience in data centric roles in the Information Technology industry in India. My work centered around Research and Development - Data ,
-    primarily data sourcing, manipulation and visulization using tools like Python, MySQL and Tableau, building machine learning models with open source ML libraries and translating business requirements into Data Science Use Cases. </p>
-</div>
-<div class="col-lg-6">
-  <h3> Ambition?</h3>
-  <p class="about-para"> I consider myself to be a highly passionate individual, of subjects such as education, mental-health and sociology. My aim is to contribute to data-centric innovation in companies intersecting these domains with technology. The past few decades have witnessed the role of technology in services providing wellness and I aim to be a part of this evolution. If your company has a similar objective, contact me ASAP!  </p>
-</div>
-  
-</div>
-<a href="https://docs.google.com/document/d/1Q9rUsJbNcHLAzXMnBXLJ5Z3Fu5F3ahWMXpHkJBKSDhA/edit?usp=sharing" download><button class="btn"> Download CV </button></a>
-</div>
-<!--about me ends-->
-<!-------------------------------------->
+<!-- Education Section -->
+<section id="education" class="py-5 bg-light">
+  <div class="container">
+    <h1 class="section-title text-center">Education.</h1>
+    <div class="row mt-5 justify-content-center">
+      <div class="col-lg-5 col-md-6 mb-4">
+        <div class="education-card">
+          <div class="education-circle">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <div class="education-content">
+            <h3>Computer Science Engineering</h3>
+            <p>Bachelor's Degree</p>
+            <p class="education-year">2016 - 2020</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mb-4">
+        <div class="education-card">
+          <div class="education-circle">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="education-content">
+            <h3>Masters in Big Data</h3>
+            <p>Master's Degree</p>
+            <p class="education-year">2023 - 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!--Skills-->
-  <div id="skills" >
-    <h1  style="text-align:center;">Skills.</h1>
 
-    <div class="row">
-      
-   <div class="col-lg-4">
-  <div class="card-skills">
-    <div class="skill-icon">
-    <a id="myBtn-one" ><i class="fa-solid fa-square-poll-vertical fa-5x"></i></a>
-    </div>
-    <h1>Data Analysis</h1>
-    <p>I leverage data to answer questions using statistical methods and programming.</p>   
-    
-  </div>
-     
-</div>
-       <div class="col-lg-4">
-  <div class="card-skills">
-    <div class="skill-icon">
-    <a id="myBtn-two"><i class="fa-brands fa-python fa-5x"></i></a>
-    </div>
-    <h1>Python</h1>
-    <p>I Use Python for both Data Analysis and Software Development.</p>    
-  </div>
-</div>
-            <div class="col-lg-4">
-  <div class="card-skills">
-    <div class="skill-icon">
-    <a id="myBtn-three"><i class="fa-solid fa-chart-pie fa-5x"></i></a>
-    </div>
-    <h1>Data Visualization</h1>
-    <p>I Use Visualization tools for story telling with Data.</p>    
-  </div>
-</div>
-       
-      
-   <div class="col-lg-4">
-  <div class="card-skills">
-    <div class="skill-icon">
-    <a id="myBtn-four"><i class="fa-solid fa-computer fa-5x"></i></a>
-    </div>
-    <h1>Machine Learning</h1>
-    <p>I can develop machine learning models with open source libraries and packages.</p>    
-  </div>
-</div>
-       <div class="col-lg-4">
-  <div class="card-skills">
-    <div class="skill-icon">
-    <a id="myBtn-five"><i class="fa-solid fa-book fa-5x"></i></a>
-    </div>
-    <h1>Research</h1>
-    <p>I Follow and implement an organized research strategy and communicate studies efficiently.</p>    
-  </div>
-</div>
-            <div class="col-lg-4">
-  <div class="card-skills">
-    <div class="skill-icon">
-    <a id="myBtn-six"><i class="fa-solid fa-user-plus fa-5x"></i></a>
-    </div>
-    <h1>Others</h1>
-    <p>Some extra technical skills and software known.</p>    
-  </div>
-</div>
-       
-    </div>
-     <!--row 2 ends-->
-</div>
-  <!--container ends here-->
-<!--Skills ends-->
 
-<!------------------------------------------------>
-<!--Portfolio begins-->
-<div id="portfolio" >
-  <h1  style="text-align:center;">Portfolio.</h1>
-    <div class="row">
-      <div class="col-lg-3">
-      <div class="card ">
-        <img src="images\Google Analytics Captstone.png" alt="Picture of Me">
-    <p>Data Analysis Case Study in Healthcare- Analyzing Fitbit usage data to provide recommendations for Bellabeat's Marketing Team </p>
-      <div style="margin: 24px 0;">
-        <a href="https://medium.com/@hinberrymimi/google-analytics-capstone-project-how-can-bellabeat-a-wellness-technology-company-play-it-smart-cd853c9f0efd"> <i class="fa-brands fa-medium fa-xl"></i></a>
-        <!--<a href=""><i class="fa-brands fa-github fa-xl"></i></a>-->
-      </div> 
+<!-- About Section -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h1 class="section-title">About.</h1>
+    <div class="row mt-5">
+      <div class="col-lg-6 mb-4">
+        <div class="about-card">
+          <div class="icon-box">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3>Experience?</h3>
+          <p class="about-para">My background includes an undergraduate degree in Computer Science Engineering. Additionally I have a year work experience in data centric roles in the Information Technology industry in India. My work centered around Research and Development - Data, primarily data sourcing, manipulation and visualization using tools like Python, MySQL and Tableau, building machine learning models with open source ML libraries and translating business requirements into Data Science Use Cases.</p>
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4">
+        <div class="about-card">
+          <div class="icon-box">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Ambition?</h3>
+          <p class="about-para">I consider myself to be a highly passionate individual, of subjects such as education, mental-health and sociology. My aim is to contribute to data-centric innovation in companies intersecting these domains with technology. The past few decades have witnessed the role of technology in services providing wellness and I aim to be a part of this evolution. If your company has a similar objective, contact me ASAP!</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="https://docs.google.com/document/d/1Q9rUsJbNcHLAzXMnBXLJ5Z3Fu5F3ahWMXpHkJBKSDhA/edit?usp=sharing" download class="btn btn-custom">Download CV</a>
+    </div>
   </div>
-</div>
-  <div class="col-lg-3">
-  <div class="card ">
-    <img src="images\mbti.png" alt="Picture of Me">
-    <p>Data Analysis Case Study in Education - Analyzing MBTI data and correlating trends with research in teaching methods for differnt types.  </p>
-      <div style="margin: 24px 0;">
-        <a href="https://medium.com/@hinberrymimi/mbti-in-education-a-look-at-how-mbti-can-be-leveraged-to-design-curriculums-and-teaching-methods-680fc17f1038"> <i class="fa-brands fa-medium fa-xl"></i></a>
-        <!--<a href=""><i class="fa-brands fa-github fa-xl"></i></a>-->
-      </div> 
-  </div>
-</div>
-       <div class="col-lg-3">
-  <div class="card ">
-    <img src="images\persistance of casteism in India.png" alt="Picture of Me">
-    <p>Data Analysis on data sourced from NCRB data hosted publicly to study the relevance of crime agaisnt scheduled castes and tribes in india.</p>
-      <div style="margin: 24px 0;">
-        <a href="https://medium.com/@hinberrymimi/a-look-at-the-persistence-of-casteism-in-india-b50e9a8d2c1c"> <i class="fa-brands fa-medium fa-xl"></i></a>
-       <!-- <a href=""><i class="fa-brands fa-github fa-xl"></i></a>-->
-      </div> 
-  </div>
-</div>
-            <div class="col-lg-3">
-  <div class="card">
-    <img src="images\water convservation in india.png" alt="Picture of Me">
-    <p>Data storytelling and visualizations created using Data hosted by India's Water Portal to bring awareness to India's water insecurity problems </p>
-      <div style="margin: 24px 0;">
-        <a href="https://medium.com/@hinberrymimi/viz-for-social-good-water-conservation-in-india-ee17387b9b4"> <i class="fa-brands fa-medium fa-xl"></i></a>
-       <!-- <a href=""><i class="fa-brands fa-github fa-xl"></i></a>-->
-      </div> 
-  </div>
-</div>
-       
-      <div class="col-lg-3">
-  <div class="card ">
-    <img src="images\academic project.png" alt="Picture of Me">
-    <p>Final Year project using python- a voice activated text editor with machine learning based text summarization aimed at helping the visually challenged to prepare notes. </p>
-      <div style="margin: 24px 0;">
-       <!-- <a href=""> <i class="fa-brands fa-medium fa-xl"></i></a>-->
-        <a href="https://github.com/maureenrachel28/Voice-Activated-Study-Tool-With-ML-based-Summarization"><i class="fa-brands fa-github fa-xl"></i></a>
-      </div> 
-  </div>
-</div>
-      <div class="col-lg-3">
-  <div class="card ">
-    <img src="images\intro to ml courses (1).png" alt="Picture of Me">
-    <p>A bunch of Data Viz community projects attempted in Tableau as part of the community's many programs.</p>
-      <div style="margin: 24px 0;">
-        <a href="https://public.tableau.com/app/profile/maureen.rachel.cassandra.herbert"> <i class="fa-brands fa-medium fa-xl"></i></a>
-       <!-- <a href=""><i class="fa-brands fa-github fa-xl"></i></a>-->
-      </div> 
-  </div>
-</div>
-            <div class="col-lg-3">
-  <div class="card ">
-    <img src="images\intro to ml courses.png" alt="Picture of Me">
-    <p>Projects I did as part of the Introduction to Machine Learning course which consists of Descriptive, Inferential and Predictive Analytics with an introduction to Linear Regression using Machine Learning with Python.</p>
-      <div style="margin: 24px 0;">
-       <!-- <a href=""> <i class="fa-brands fa-medium fa-xl"></i></a>-->
-        <a href="https://github.com/maureenrachel28/IntrotoML-udacity"><i class="fa-brands fa-github fa-xl"></i></a>
-      </div> 
-  </div>
-</div>
-            <div class="col-lg-3">
-  <div class="card ">
-    <img src="images\webdev udemy.png" alt="Picture of Me">
-    <p>Projects I did as part of the Full Stack Web Development course by Udemy. Projects were completed using the MERN stack and hosted on Heroku.</p>
-      <div style="margin: 24px 0;">
-        <!--<a href="" > <i class="fa-brands fa-medium fa-xl"></i></a>-->
-        <a href="https://github.com/maureenrachel28/PersonalJournalWebApp"><i class="fa-brands fa-github fa-xl"></i></a>
-      </div> 
-  </div>
-</div>
-    
-  </div>
-</div>
-  <!--Portfolio ends here-->
-<!---------------------------------------------->   
-<!--Contact Page starts here-->
-<div id="contact">
-  <a href="mailto:maureenrachel287@gmail.com">
-  <button type="button" class="btn"> E-mail</button>   </a>
-  <div class="icons">
-    <a href="https://medium.com/@hinberrymimi" data-bs-toggle="tooltip" title="Link to my Blog on Medium" data-bs-placement="top"><i class="fa-brands fa-medium fa-1x"></i> </a> 
-    <a href="https://github.com/maureenrachel28"data-bs-toggle="tooltip" title="Link to my account on Github" data-bs-placement="top"><i class="fa-brands fa-github fa-1x"></i>       </a>
-   <!-- <a href="" data-bs-toggle="tooltip" title="Link to my account on Twitter" data-bs-placement="top"><i class="fa-brands fa-twitter fa-1x"></i>     </a>-->
-    <a href="https://www.linkedin.com/in/maureen-rachel-5b6942178/" data-bs-toggle="tooltip" title="Link to my account on Linkedin" data-bs-placement="top"><i class="fa-brands fa-linkedin fa-1x"></i>     </a>
-   
-    
-    <a href="https://www.kaggle.com/maureenrachel" data-bs-toggle="tooltip" title="Link to my Kaggle account" data-bs-placement="top"><i class="fa-brands fa-kaggle fa-1x"></i></a>
-    <a href="https://public.tableau.com/app/profile/maureen.rachel.cassandra.herbert" data-bs-toggle="tooltip" title="Link to my Tableau account" data-bs-placement="top"><i class="fa-solid fa-chart-pie fa-1x"></i></a>
-    
-   </div>
- <h5 style="font-weight:lighter;">Copyright Designed and Developed by Maureen Rachel</h5>
-</div>
+</section>
 
-<!--Contact Page ends-->
-  
-  <div id="myModal-one" class="modal">
+<!-- Livecoding Banner Section -->
+<section id="datadiaries" class="py-5">
+  <div class="container">
+    <div class="streaming-banner">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <h2>Catch my live coding sessions on DataDiaries!</h2>
+          <p>Join me as I explore data science concepts, build projects live, and share coding tips.</p>
+          <a href="YOUR_STREAMING_LINK_HERE" class="btn btn-custom" target="_blank">
+            <i class="fas fa-video me-2"></i> Watch Live
+          </a>
+          <a href="YOUR_CHANNEL_LINK_HERE" class="btn btn-outline-custom ms-2" target="_blank">
+            <i class="fas fa-heart me-2"></i> Follow Channel
+          </a>
+        </div>
+        <div class="col-lg-4 text-center">
+          <div class="streaming-icon">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <!-- Modal content -->
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-light">
+  <div class="container">
+    <h1 class="section-title text-center">Skills.</h1>
+    <div class="row mt-5">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="skill-card" id="myBtn-one">
+          <div class="skill-icon">
+            <i class="fa-solid fa-square-poll-vertical"></i>
+          </div>
+          <h3>Data Analysis</h3>
+          <p>I leverage data to answer questions using statistical methods and programming.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="skill-card" id="myBtn-two">
+          <div class="skill-icon">
+            <i class="fa-brands fa-python"></i>
+          </div>
+          <h3>Python</h3>
+          <p>I Use Python for both Data Analysis and Software Development.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="skill-card" id="myBtn-three">
+          <div class="skill-icon">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h3>Data Visualization</h3>
+          <p>I Use Visualization tools for story telling with Data.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="skill-card" id="myBtn-four">
+          <div class="skill-icon">
+            <i class="fa-solid fa-computer"></i>
+          </div>
+          <h3>Machine Learning</h3>
+          <p>I can develop machine learning models with open source libraries and packages.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="skill-card" id="myBtn-five">
+          <div class="skill-icon">
+            <i class="fa-solid fa-book"></i>
+          </div>
+          <h3>Research</h3>
+          <p>I Follow and implement an organized research strategy and communicate studies efficiently.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="skill-card" id="myBtn-six">
+          <div class="skill-icon">
+            <i class="fa-solid fa-user-plus"></i>
+          </div>
+          <h3>Others</h3>
+          <p>Some extra technical skills and software known.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5">
+  <div class="container">
+    <h1 class="section-title text-center">Portfolio.</h1>
+    <div class="row mt-5">
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/Google Analytics Captstone.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>Fitbit Usage Analysis</h4>
+            <p>Data Analysis Case Study in Healthcare- Analyzing Fitbit usage data to provide recommendations for Bellabeat's Marketing Team</p>
+            <div class="portfolio-links">
+              <a href="https://medium.com/@hinberrymimi/google-analytics-capstone-project-how-can-bellabeat-a-wellness-technology-company-play-it-smart-cd853c9f0efd"><i class="fa-brands fa-medium"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/mbti.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>MBTI in Education</h4>
+            <p>Data Analysis Case Study in Education - Analyzing MBTI data and correlating trends with research in teaching methods for different types.</p>
+            <div class="portfolio-links">
+              <a href="https://medium.com/@hinberrymimi/mbti-in-education-a-look-at-how-mbti-can-be-leveraged-to-design-curriculums-and-teaching-methods-680fc17f1038"><i class="fa-brands fa-medium"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/persistance of casteism in India.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>Casteism in India</h4>
+            <p>Data Analysis on data sourced from NCRB data hosted publicly to study the relevance of crime against scheduled castes and tribes in india.</p>
+            <div class="portfolio-links">
+              <a href="https://medium.com/@hinberrymimi/a-look-at-the-persistence-of-casteism-in-india-b50e9a8d2c1c"><i class="fa-brands fa-medium"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/water convservation in india.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>Water Conservation</h4>
+            <p>Data storytelling and visualizations created using Data hosted by India's Water Portal to bring awareness to India's water insecurity problems</p>
+            <div class="portfolio-links">
+              <a href="https://medium.com/@hinberrymimi/viz-for-social-good-water-conservation-in-india-ee17387b9b4"><i class="fa-brands fa-medium"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/academic project.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>Voice-Activated Text Editor</h4>
+            <p>Final Year project using python- a voice activated text editor with machine learning based text summarization aimed at helping the visually challenged to prepare notes.</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/maureenrachel28/Voice-Activated-Study-Tool-With-ML-based-Summarization"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/intro to ml courses (1).png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>Tableau Projects</h4>
+            <p>A bunch of Data Viz community projects attempted in Tableau as part of the community's many programs.</p>
+            <div class="portfolio-links">
+              <a href="https://public.tableau.com/app/profile/maureen.rachel.cassandra.herbert"><i class="fa-solid fa-chart-pie"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/intro to ml courses.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>ML Course Projects</h4>
+            <p>Projects I did as part of the Introduction to Machine Learning course which consists of Descriptive, Inferential and Predictive Analytics with an introduction to Linear Regression using Machine Learning with Python.</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/maureenrachel28/IntrotoML-udacity"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="portfolio-card">
+          <div class="portfolio-img">
+            <img src="images/webdev udemy.png" alt="Project Image" class="img-fluid">
+          </div>
+          <div class="portfolio-content">
+            <h4>Web Development Projects</h4>
+            <p>Projects I did as part of the Full Stack Web Development course by Udemy. Projects were completed using the MERN stack and hosted on Heroku.</p>
+            <div class="portfolio-links">
+              <a href="https://github.com/maureenrachel28/PersonalJournalWebApp"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center">
+    <h1 class="section-title">Get In Touch</h1>
+    <p class="mb-5">Feel free to reach out for collaborations or just a friendly hello!</p>
+    <a href="mailto:maureenrachel287@gmail.com" class="btn btn-custom btn-lg mb-5">Send me an Email</a>
+    <div class="social-icons">
+      <a href="https://medium.com/@hinberrymimi" data-bs-toggle="tooltip" title="Medium"><i class="fa-brands fa-medium"></i></a>
+      <a href="https://github.com/maureenrachel28" data-bs-toggle="tooltip" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/maureen-rachel-5b6942178/" data-bs-toggle="tooltip" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.kaggle.com/maureenrachel" data-bs-toggle="tooltip" title="Kaggle"><i class="fa-brands fa-kaggle"></i></a>
+      <a href="https://public.tableau.com/app/profile/maureen.rachel.cassandra.herbert" data-bs-toggle="tooltip" title="Tableau"><i class="fa-solid fa-chart-pie"></i></a>
+    </div>
+    <div class="mt-5">
+      <p class="copyright">© <span id="year"></span> Maureen Rachel. All rights reserved.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Modals -->
+<div id="myModal-one" class="modal">
   <div class="modal-content">
-
-   <div>
-<p>Hypothesis Testing</p>
-<div class="skills-container">
-  <div class="skills-bar hyptes">90%</div>
-</div>
-
-<p>Predictive Analysis</p>
-<div class="skills-container">
-  <div class="skills-bar predana">90%</div>
-</div>
-
-<p>Descriptive Analysis</p>
-<div class="skills-container">
-  <div class="skills-bar desana">90%</div>
-</div>
-
-<p>Exploratory Data Analysis</p>
-<div class="skills-container">
-  <div class="skills-bar eda">90%</div>
-</div>
+    <span class="close">&times;</span>
+    <h3>Data Analysis Skills</h3>
+    <div class="skills-details">
+      <p>Hypothesis Testing</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
+      <p>Predictive Analysis</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
+      <p>Descriptive Analysis</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
+      <p>Exploratory Data Analysis</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
     </div>
   </div>
-
 </div>
-  
-  <!--------------------------->
-  <div id="myModal-two" class="modal">
 
-  <!-- Modal content -->
+<div id="myModal-two" class="modal">
   <div class="modal-content">
- 
-   <div>
-<p>data structures</p>
-<div class="skills-container">
-  <div class="skills-bar ds">70%</div>
-</div>
-
-<p>pandas</p>
-<div class="skills-container">
-  <div class="skills-bar pan">80%</div>
-</div>
-
-<p>numpy</p>
-<div class="skills-container">
-  <div class="skills-bar num">80%</div>
-</div>
-
-<p>nltk</p>
-<div class="skills-container">
-  <div class="skills-bar nlt">70%</div>
-</div>
+    <span class="close">&times;</span>
+    <h3>Python Skills</h3>
+    <div class="skills-details">
+      <p>data structures</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 70%">70%</div>
+      </div>
+      <p>pandas</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%">80%</div>
+      </div>
+      <p>numpy</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%">80%</div>
+      </div>
+      <p>nltk</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 70%">70%</div>
+      </div>
     </div>
   </div>
-
 </div>
-  
-  <!----------modal 3------>
-    <div id="myModal-three" class="modal">
 
-  <!-- Modal content -->
+<div id="myModal-three" class="modal">
   <div class="modal-content">
-    
-   <div>
-<p>Tableau</p>
-<div class="skills-container">
-  <div class="skills-bar tab">60%</div>
-</div>
-
-<p>python-ggplot</p>
-<div class="skills-container">
-  <div class="skills-bar ggp">80%</div>
-</div>
-
-<p>python-matplotlib</p>
-<div class="skills-container">
-  <div class="skills-bar mpl">80%</div>
-</div>
+    <span class="close">&times;</span>
+    <h3>Data Visualization Skills</h3>
+    <div class="skills-details">
+      <p>Tableau</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 60%">60%</div>
+      </div>
+      <p>python-ggplot</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%">80%</div>
+      </div>
+      <p>python-matplotlib</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%">80%</div>
+      </div>
     </div>
   </div>
-
 </div>
-  <!-------modal 4--------->
-    <div id="myModal-four" class="modal">
 
-  <!-- Modal content -->
+<div id="myModal-four" class="modal">
   <div class="modal-content">
-    
-   <div>
-<p>scikit-learn</p>
-<div class="skills-container">
-  <div class="skills-bar sci">80%</div>
-</div>
-
-<p>tensorflow</p>
-<div class="skills-container">
-  <div class="skills-bar ten">40%</div>
-</div>
-
-<p>keras</p>
-<div class="skills-container">
-  <div class="skills-bar ker">40%</div>
-</div>
-
-
+    <span class="close">&times;</span>
+    <h3>Machine Learning Skills</h3>
+    <div class="skills-details">
+      <p>scikit-learn</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 80%">80%</div>
+      </div>
+      <p>tensorflow</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 40%">40%</div>
+      </div>
+      <p>keras</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 40%">40%</div>
+      </div>
     </div>
   </div>
-
 </div>
-  <!--------modal 5-------->
-    <div id="myModal-five" class="modal">
 
-  <!-- Modal content -->
+<div id="myModal-five" class="modal">
   <div class="modal-content">
-    
-   <div>
-<p>writing</p>
-<div class="skills-container">
-  <div class="skills-bar wri">90%</div>
-</div>
-
-<p>presentation</p>
-<div class="skills-container">
-  <div class="skills-bar pre">90%</div>
-</div>
-
-<p>documentation</p>
-<div class="skills-container">
-  <div class="skills-bar doc">90%</div>
-</div>
-
-<p>brainstorming</p>
-<div class="skills-container">
-  <div class="skills-bar bra">90%</div>
-</div>
+    <span class="close">&times;</span>
+    <h3>Research Skills</h3>
+    <div class="skills-details">
+      <p>writing</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
+      <p>presentation</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
+      <p>documentation</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
+      <p>brainstorming</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
     </div>
   </div>
-
 </div>
-  <!-------modal 6--------->
-    <div id="myModal-six" class="modal">
 
-  <!-- Modal content -->
+<div id="myModal-six" class="modal">
   <div class="modal-content">
-   <div>
-<p>HTML,CSS,JS</p>
-<div class="skills-container">
-  <div class="skills-bar html-css-js">90%</div>
-</div>
-
-<p>AWS</p>
-<div class="skills-container">
-  <div class="skills-bar aws">20%</div>
-</div>
-
-<p>Flask</p>
-<div class="skills-container">
-  <div class="skills-bar flask">20%</div>
-</div>
-
-<p>Adobe Photoshop</p>
-<div class="skills-container">
-  <div class="skills-bar ado">70%</div>
-</div>
+    <span class="close">&times;</span>
+    <h3>Other Skills</h3>
+    <div class="skills-details">
+      <p>HTML,CSS,JS</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 90%">90%</div>
+      </div>
+      <p>AWS</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 20%">20%</div>
+      </div>
+      <p>Flask</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 20%">20%</div>
+      </div>
+      <p>Adobe Photoshop</p>
+      <div class="progress">
+        <div class="progress-bar" style="width: 70%">70%</div>
+      </div>
     </div>
   </div>
-
 </div>
-  
 
+<!-- About Me Overlay -->
 <div id="overlay" onclick="off()">
   <div id="text">
-    <div class="overlay-content" style="background-color:#aeaeae,">
-    <p style="margin-top: 30px;font-weight: bold;"> Who is Maureen Outside of work? </p>
-    <div style="margin-left: 20px;" class="row">
-    <img class="col-lg-4" style="max-width: 300px;" src="images\Picsart_22-09-15_00-37-06-795.jpg">
-    <p style="color: white; font-weight: bold;" class="col-lg-8"> I tend to adopt a different hobby whenever i feel like it and usually never stick to it. I sing and make covers, mostly acapella or to random kareoke on youtube, my fav music genres are rnb and funk.
-       My favourite food are momos and anything chocolate. I love anime, FullMetal Alchemist is the best anime ever made. MBTI is my religion and ENFPs are obviously God. I suck at shooting games and will never play COD. My gaming history goes way back to Animal Crossing on the DS and now Horizon Zero Dawn on the PC. I play Genshin Impact only for the waifus and the husbandos. Not guilty.
-       I dream of getting to cosplay some day, although my chaotic hairstyles can pass for casual cosplay. I love love, and I love my family, which includes the bae. Im a huge homebody but a trip to Hawaii sure sounds nice. </p>
-    </div>
+    <div class="overlay-content">
+      <h3>Who is Maureen Outside of work?</h3>
+      <div class="row align-items-center">
+        <div class="col-lg-4">
+          <img src="images/Picsart_22-09-15_00-37-06-795.jpg" alt="Personal Photo" class="img-fluid">
+        </div>
+        <div class="col-lg-8">
+          <p>I tend to adopt a different hobby whenever i feel like it and usually never stick to it. I sing and make covers, mostly acapella or to random kareoke on youtube, my fav music genres are rnb and funk. My favourite food are momos and anything chocolate. I love anime, FullMetal Alchemist is the best anime ever made. MBTI is my religion and ENFPs are obviously God. I suck at shooting games and will never play COD. My gaming history goes way back to Animal Crossing on the DS and now Horizon Zero Dawn on the PC. I play Genshin Impact only for the waifus and the husbandos. Not guilty. I dream of getting to cosplay some day, although my chaotic hairstyles can pass for casual cosplay. I love love, and I love my family, which includes the bae. Im a huge homebody but a trip to Hawaii sure sounds nice.</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<!-- partial -->
-  <script  src="./script.js"></script>
 
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+<script src="./script.js"></script>
 </body>
 </html>
