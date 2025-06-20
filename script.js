@@ -39,12 +39,14 @@ const closeBtns = document.querySelectorAll('.close');
 modalBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     modals[index].style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
   });
 });
 
 closeBtns.forEach((btn, index) => {
   btn.addEventListener('click', () => {
     modals[index].style.display = 'none';
+    document.body.style.overflow = 'auto'; // Re-enable scrolling
   });
 });
 
@@ -52,39 +54,47 @@ window.addEventListener('click', (e) => {
   modals.forEach(modal => {
     if (e.target === modal) {
       modal.style.display = 'none';
+      document.body.style.overflow = 'auto';
     }
   });
 });
 
-// About me overlay
+// About me overlay - Enhanced version
 function on() {
   document.getElementById("overlay").style.display = "block";
+  document.body.style.overflow = "hidden"; // Prevent scrolling
+  document.addEventListener('keydown', handleEscapeKey); // Add escape key listener
 }
 
 function off() {
   document.getElementById("overlay").style.display = "none";
+  document.body.style.overflow = "auto"; // Re-enable scrolling
+  document.removeEventListener('keydown', handleEscapeKey); // Remove escape key listener
 }
 
-// Initialize tooltips
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
+function handleEscapeKey(e) {
+  if (e.key === "Escape") {
+    off();
+  }
+}
+
+// Close overlay when clicking outside content
+document.getElementById('overlay').addEventListener('click', function(e) {
+  if (e.target === this) {
+    off();
+  }
 });
 
-// Add this to your existing smooth scrolling code
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
-    e.preventDefault();
-    
-    const targetId = this.getAttribute('href');
-    if (targetId === '#') return;
-    
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 70,
-        behavior: 'smooth'
-      });
-    }
-  });
+// Initialize tooltips
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
+
+// Make sure the profile image has the onclick handler
+document.addEventListener('DOMContentLoaded', function() {
+  const profileImg = document.querySelector('.home-img img');
+  if (profileImg) {
+    profileImg.addEventListener('click', on);
+  }
 });
